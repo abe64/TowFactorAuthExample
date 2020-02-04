@@ -1,0 +1,49 @@
+server:
+  port: 80
+  tomcat:
+    max-threads: 2
+    min-spare-threads: 1
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/twofactor_api?characterEncoding=UTF-8&useSSL=false&serverTimezone=JST
+#以下はdocker環境のtomcat上で動かす場合の設定
+#    url: jdbc:mysql://twofactor_db:3306/twofactor_api?characterEncoding=UTF-8&useSSL=false&serverTimezone=JST
+    username: root
+    password: password
+    sqlScriptEncoding: UTF-8
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 10
+#    type: org.apache.tomcat.jdbc.pool.DataSource
+#    tomcat:
+#      maxActive: 15
+#      maxIdle: 10
+#      minIdle: 5
+#      initialSize: 2
+  redis:    host: localhost
+    port: 16379
+    password: null
+  mail:    host: smtp.sharecrest.com
+    port: 587
+    username: abe@sharecrest.com
+    password: gxxqpy1996
+    properties:      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: false
+     
+logging:
+  file: c:/Temp/twofactor-api-test.log
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+      dbflute:
+        system:
+          XLog: DEBUG
+          QLog: DEBUG

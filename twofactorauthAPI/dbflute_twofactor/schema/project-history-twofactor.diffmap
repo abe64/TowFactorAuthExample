@@ -1,0 +1,139 @@
+map:{
+    ; 2019/12/25 18:48:34 = map:{
+        ; diffDate = 2019/12/25 18:48:34
+        ; diffAuthor = abe
+        ; diffGitBranch = addVueFront
+        ; tableDiff = map:{
+            ; user = map:{
+                ; tableName = user
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; telno = map:{
+                        ; columnName = telno
+                        ; diffType = ADD
+                    }
+                }
+            }
+        }
+    }
+    ; 2019/12/23 16:28:14 = map:{
+        ; diffDate = 2019/12/23 16:28:14
+        ; diffAuthor = abe
+        ; diffGitBranch = master
+        ; tableDiff = map:{
+            ; user = map:{
+                ; tableName = user
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; two_factor_use = map:{
+                        ; columnName = two_factor_use
+                        ; diffType = CHANGE
+                        ; defaultValueDiff = map:{
+                            ; next = "0"
+                            ; previous = null
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ; 2019/12/23 12:45:02 = map:{
+        ; diffDate = 2019/12/23 12:45:02
+        ; diffAuthor = abe
+        ; diffGitBranch = master
+        ; tableDiff = map:{
+            ; user = map:{
+                ; tableName = user
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; status = map:{
+                        ; columnName = status
+                        ; diffType = ADD
+                    }
+                }
+                ; uniqueKeyDiff = map:{
+                    ; account = map:{
+                        ; constraintName = account
+                        ; diffType = ADD
+                    }
+                }
+            }
+        }
+    }
+    ; 2019/12/20 15:22:32 = map:{
+        ; diffDate = 2019/12/20 15:22:32
+        ; tableCount = map:{
+            ; next = 4
+            ; previous = 3
+        }
+        ; diffAuthor = abe
+        ; tableDiff = map:{
+            ; option_data = map:{
+                ; tableName = option_data
+                ; diffType = ADD
+            }
+            ; fixed_mail = map:{
+                ; tableName = fixed_mail
+                ; diffType = CHANGE
+                ; uniqueKeyDiff = map:{
+                    ; code = map:{
+                        ; constraintName = code
+                        ; diffType = ADD
+                    }
+                }
+            }
+        }
+    }
+    ; 2019/12/20 14:12:14 = map:{
+        ; diffDate = 2019/12/20 14:12:14
+        ; tableCount = map:{
+            ; next = 3
+            ; previous = 2
+        }
+        ; diffAuthor = abe
+        ; tableDiff = map:{
+            ; fixed_mail = map:{
+                ; tableName = fixed_mail
+                ; diffType = ADD
+            }
+        }
+    }
+    ; 2019/12/18 12:40:44 = map:{
+        ; diffDate = 2019/12/18 12:40:44
+        ; diffAuthor = abe
+        ; tableDiff = map:{
+            ; user = map:{
+                ; tableName = user
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; two_factor_use = map:{
+                        ; columnName = two_factor_use
+                        ; diffType = ADD
+                    }
+                    ; is_two_factor = map:{
+                        ; columnName = is_two_factor
+                        ; diffType = DELETE
+                    }
+                }
+            }
+        }
+    }
+    ; 2019/12/18 10:31:36 = map:{
+        ; diffDate = 2019/12/18 10:31:36
+        ; tableCount = map:{
+            ; next = 2
+            ; previous = 0
+        }
+        ; diffAuthor = abe
+        ; tableDiff = map:{
+            ; flyway_schema_history = map:{
+                ; tableName = flyway_schema_history
+                ; diffType = ADD
+            }
+            ; user = map:{
+                ; tableName = user
+                ; diffType = ADD
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  tomcat:
+    max-threads: 2
+    min-spare-threads: 1
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/twofactor_api?characterEncoding=UTF-8&useSSL=false&serverTimezone=JST
+    username: root
+    password: password
+    sqlScriptEncoding: UTF-8
+    tomcat:
+      maxActive: 15
+      maxIdle: 10
+      minIdle: 5
+      initialSize: 2
+
+logging:
+  file: c:/Temp/twofactor-api-test.log
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: INFO
+      dbflute:
+        system:
+          XLog: INFO
+          QLog: INFO
